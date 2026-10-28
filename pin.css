@@ -1,0 +1,18 @@
+html.mb-pin-loading body > :not(noscript), html.mb-pin-cover body > :not(#mb-pin-root) { display: none !important; }
+html.mb-pin-cover, html.mb-pin-cover body { margin: 0; padding: 0; overflow: hidden; }
+#mb-pin-root[hidden] { display: none !important; }
+#mb-pin-root { position: fixed; inset: 0; z-index: 2147483647; box-sizing: border-box; overflow: auto; background: #f4f7f5; color: #173c2c; padding: max(24px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left)); font: 16px/1.55 system-ui, sans-serif; }
+#mb-pin-root *, #mb-pin-root *::before, #mb-pin-root *::after { box-sizing: border-box; }
+#mb-pin-root .mb-pin-card { width: 100%; max-width: 440px; margin: 5vh auto; padding: 26px; border: 1px solid #d6e2db; border-radius: 22px; background: #fff; box-shadow: 0 12px 36px #163b2910; }
+#mb-pin-root .mb-pin-brand { margin: 0 0 8px; font-size: 12px; font-weight: 750; letter-spacing: .15em; color: #52715f; }
+#mb-pin-root h1 { margin: 0 0 18px; font-size: 28px; line-height: 1.2; }
+#mb-pin-root p { margin: 12px 0; }
+#mb-pin-root .mb-pin-note { color: #506558; font-size: 14px; }
+#mb-pin-root label { display: block; margin: 14px 0 6px; font-weight: 650; }
+#mb-pin-root input { display: block; width: 100%; min-height: 52px; font-size: 24px; letter-spacing: .16em; padding: 10px 12px; border: 1px solid #9cb3a5; border-radius: 10px; color: #173c2c; background: #fff; }
+#mb-pin-root button { display: block; width: 100%; min-height: 48px; margin: 14px 0 0; padding: 12px; border-radius: 10px; border: 1px solid #b8cbbf; font: inherit; font-weight: 650; background: #eef4f0; color: #173c2c; cursor: pointer; }
+#mb-pin-root button.mb-pin-primary { background: #275e49; color: #fff; border-color: #275e49; }
+#mb-pin-root button:disabled { opacity: .6; cursor: wait; }
+#mb-pin-root :focus-visible { outline: 3px solid #a26b19; outline-offset: 3px; }
+#mb-pin-root [data-message] { min-height: 1.55em; font-weight: 600; }
+@media (max-width: 380px), (max-height: 500px) { #mb-pin-root .mb-pin-card { padding: 18px; margin: 0 auto; } }
